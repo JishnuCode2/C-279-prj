@@ -1,0 +1,93 @@
+#VRML_SIM R2023b utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/appearances/protos/CementTiles.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/appearances/protos/BlanketFabric.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/robots/gctronic/e-puck/protos/E-puck.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/appearances/protos/BakelitePlastic.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/appearances/protos/MetalPipePaint.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation 0.6123192899337043 -0.6604290816219677 -0.4346245682460305 4.0182987451376855
+  position 0.7741895976529881 2.64669969018873 6.583765803426766
+}
+TexturedBackground {
+  texture "empty_office"
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  translation 0 0.72 0
+  floorSize 2 2
+  wallThickness 0.1
+  wallHeight 0.3
+}
+Pose {
+  translation -0.62 0.09 0.13
+  children [
+    Shape {
+      appearance CementTiles {
+      }
+      geometry Box {
+        size 0.25 0.25 0.25
+      }
+    }
+  ]
+}
+Pose {
+  translation -0.35 1.08 0.13
+  rotation 0 1 0 4.6928e-06
+  children [
+    Shape {
+      appearance BlanketFabric {
+      }
+      geometry Box {
+        size 0.25 0.25 0.25
+      }
+    }
+  ]
+}
+Pose {
+  translation 0.38 1.1 0.13
+  rotation 0 1 0 4.6928e-06
+  children [
+    Shape {
+      appearance BakelitePlastic {
+      }
+      geometry Box {
+        size 0.25 0.25 0.25
+      }
+    }
+  ]
+}
+Pose {
+  translation 0.38 0.1 -0.03
+  rotation 0 1 0 4.6928e-06
+  children [
+    Shape {
+      appearance MetalPipePaint {
+      }
+      geometry Sphere {
+        radius 0.25
+      }
+    }
+  ]
+}
+E-puck {
+  hidden position_0_0 579.2437332848369
+  hidden position_0_1 700.6392443411817
+  hidden linearVelocity_0 -0.03628431385631309 -0.043308341460907694 -8.390207350170374e-08
+  hidden angularVelocity_0 0.0012329950433982197 -0.001056739226694733 0.09109751523716664
+  hidden rotation_1 0 1 0 1.1906850243149791
+  hidden linearVelocity_1 -0.03476890959958177 -0.041498482778093794 -2.4988303026746715e-08
+  hidden angularVelocity_1 2.0663596928942916 -1.7312033036157135 0.09281741249455924
+  hidden rotation_2 0 -1 0 3.07751006293202
+  hidden linearVelocity_2 -0.03781146056324652 -0.04512984208151448 -1.0694286420851086e-07
+  hidden angularVelocity_2 2.2649674480891315 -1.8977382872269537 0.09308431567175951
+  translation -0.21939120769358544 1.5125340128587328 -6.428931573377109e-05
+  rotation -0.0006027327360225597 -0.0003498977541418496 -0.9999997571423758 2.266466601457234
+}
